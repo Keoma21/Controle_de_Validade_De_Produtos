@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Gerenciamento de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h2 id="titulo">Software para Gerenciamento de Validade de Produtos</h2>
+        <br>
+        <p id="subtitulo">Cadastro de Produtos</p>        
+    </div>
+
+    <form id="form">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="Produto">Produto: </label>
+                <input type="text" name="Produto" id="nomeproduto">
+            </div>
+
+            <div class="campo">
+                <label for="Quantidade">Quantidade</label>
+                <input type="text" name="Quantidade" id="qtdproduto">
+            </div>
+    
+            <div class="campo">
+                <label for="Validade">Data de Validade</label>
+                <input type="date" name="datadevalidade" id="validadeproduto">
+            </div>
+        </fieldset>
+
+            <div class="campo" id="alert">
+                <label for="Alerta">Emitir Alerta de Vencimento?</label>
+                <input type="checkbox" name="ativar alerta" id="ativar alerta">
+            </div>
+            
+            <div class="radio">
+                <label>Emitir alerta em:</label>
+                <label><input type="radio" name="radio" value="15 dias" checked> 15 dias</label>
+                <label><input type="radio" name="radio" value="7 dias"> 7 dias</label>
+                <label><input type="radio" name="radio" value="2 dias"> 5 dias</label>
+                                
+            </div>
+    </form>
+
+    <div class="botoes">
+        <button type="cadastrar" id="cad">Cadastrar</button>
+        <button type="alterar" id="alt">Alterar</button>
+        <button type="excluir" id="ex">Excluir</button>
+        <button type="alertascadastrados" id="aler">Meus Alertas</button>
+    </div>
+    
+</body>
+</html>
